@@ -8,9 +8,6 @@ Dependency project
 
 https://github.com/srijiths/Network
 
-For more info on how to use
-https://github.com/srijiths/NextPageFinder/wiki
-
 Sample next page links
 
 http://www.washingtontimes.com/news/2012/aug/29/american-scene-cdc-says-west-nile-cases-rise-40-in/?page=1&utm_medium=RSS&utm_source=RSS_Feed
@@ -28,5 +25,3 @@ Please make sure to pass the latest re directed url to NextPage FInder.
 Check out the SampleUsage.java class 
 
 Concept taken from Readability project.
-
-@cite - Java-Readability
