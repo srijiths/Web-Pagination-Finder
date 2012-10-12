@@ -4,6 +4,8 @@ A utility to find out the next page links from a html page.
 
 Its a very common real time open issue to find out the next page links of a given url. 
 
+Build using maven
+
 Dependency project
 
 https://github.com/srijiths/Network
@@ -22,6 +24,8 @@ http://articles.economictimes.indiatimes.com/2012-08-16/news/33217737_1_market-t
 
 Please make sure to pass the latest re directed url to NextPage FInder.
 
-Check out the SampleUsage.java class 
+Check out the SampleUsage.java class or you can run it in command line
+
+MAVEN_OPTS="-Xms256m -Xmx2000m" mvn exec:java -Dexec.mainClass=com.sree.textbytes.nextpage.SampleUsage
 
 Concept taken from Readability project.
