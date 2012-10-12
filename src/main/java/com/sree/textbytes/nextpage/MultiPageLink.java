@@ -45,6 +45,12 @@ public class MultiPageLink {
 		return documentInfo;
 	}
 	
+	/**
+	 * recursive call to next pages until next page is null
+	 * 
+	 * @param initialLink
+	 */
+	
 	private void checkNextPageLinks(String initialLink) {
 		String html = null;
 		try {

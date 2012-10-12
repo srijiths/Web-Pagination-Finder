@@ -41,6 +41,11 @@ public class DocumentInfo {
 	List<String> nextPageLinks = new ArrayList<String>();
 	
 	/**
+	 * Its true of the document has next pages.
+	 */
+	private boolean isMultiPage = false;
+	
+	/**
 	 * Set the next pages 
 	 * 
 	 * @param nextPageLink
@@ -77,11 +82,6 @@ public class DocumentInfo {
 		return linkElements;
 	}
 	
-	/**
-	 * Its true of the document has next pages.
-	 */
-	private boolean isMultiPage = false;
-	
 	public void setMultiPageStatus(boolean status) {
 		this.isMultiPage = status;
 	}
@@ -89,12 +89,6 @@ public class DocumentInfo {
 	public boolean getMultiPageStatus() {
 		return isMultiPage;
 	}
-	
-	/**
-	 * returns the title of the webpage
-	 * 
-	 * @return
-	 */
 	
 	public void setUrl(String url) {
 		this.url = url; 
