@@ -1,11 +1,11 @@
 package com.sree.textbytes.nextpage;
 
 import org.apache.log4j.Logger;
+import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
 import com.sree.textbytes.network.HtmlFetcher;
-import com.sree.textbytes.nextpage.helpers.NekoJsoupParser;
 import com.sree.textbytes.nextpage.helpers.string;
 
 /**
@@ -113,9 +113,8 @@ public class MultiPageLink {
 	 */
 	private Document parseHtml(String rawHtml,String url) {
 		Document document = null;
-		NekoJsoupParser nekoParser = new NekoJsoupParser();
 		try {
-			document = nekoParser.parse(rawHtml, url);
+			document = Jsoup.parse(rawHtml, url);
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
@@ -125,6 +124,5 @@ public class MultiPageLink {
     private String normalizeTrailingSlash(String url) {
         return url.replaceAll("/$", "");
     }
-	
 
 }
